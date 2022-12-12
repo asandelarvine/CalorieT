@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{% load static%}
+{% load bootstrap4 %}
+
+{% block content %}
+
+<div class="container">
+        <style>
+            dat{
+                border:1px solid black;
+                margin:auto;
+                padding: 40px;
+            }
+        </style>
+    
+    <form action="" method="POST" class="dat">
+        {% csrf_token %}
+        {% bootstrap_form form %}
+        <input type="submit" class="btn btn-success" value="submit">
+    </form>
+</div>
+{% endblock %}
