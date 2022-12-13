@@ -41,7 +41,7 @@ cloudinary.config(
     api_secret=config('CD_SECRET'),
     secure = config('CD_SECURE'))
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Application definition
