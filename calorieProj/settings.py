@@ -88,11 +88,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'calorieProj.wsgi.application'
 
-cloudinary.config( 
-  cloud_name = "kibiego", 
-  api_key = "334514816255994", 
-  api_secret = "0uz2ImPjhHwsz4i70JvkSmyh-QA" 
-)
+
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 STATIC_URL = '/static/'
